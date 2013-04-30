@@ -20,7 +20,7 @@ Add the following lines to your 'composer.json' file:
                     "type": "package",
                     "package": {
                         "name": "snoopmedia/fpdf",
-                        "version": "1.0.0",
+                        "version": "1.0.1",
                         "dist": {
                             "url": "https://github.com/snoopmedia/fpdf/archive/master.zip",
                             "type": "zip"
