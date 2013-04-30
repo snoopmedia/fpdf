@@ -1,4 +1,4 @@
-Generation to PDF for use with Symfony 2.1
+Generation to PDF for use with Symfony 2
 ==============================
 
 Uses FPDF 1.7
@@ -13,19 +13,22 @@ Add the following lines to your 'composer.json' file:
                 "php": ">=5.3.3",
                 "symfony/symfony": "2.1.*",
                 .......
-                "startupjob/fpdf": "*"
+                "snoopmedia/fpdf": "*"
          },
         "repositories": [
                 {
                     "type": "package",
                     "package": {
-                        "name": "startupjob/fpdf",
-                        "version": "master",
-                        "source": {
-                            "url": "git@github.com:startupjob/fpdf.git",
-                            "type": "git",
-                            "reference": "master"
-                        }
+                        "name": "snoopmedia/fpdf",
+                        "version": "1.0.0",
+                        "dist": {
+                            "url": "https://github.com/snoopmedia/fpdf/archive/master.zip",
+                            "type": "zip"
+                        },
+                        "autoload": {
+                            "psr-0": { "Snoopmedia": "" }
+                        },
+                        "target-dir": "Snoopmedia"
                     }
                 }
             ],
@@ -37,10 +40,6 @@ Usage
 --------
 
         $pdf = new \PDF;
-
-Developed by
----------
-[StartupJob](http://www.startupjob.com.br/)
 
 Sources
 ---------
